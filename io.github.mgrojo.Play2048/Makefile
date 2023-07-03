@@ -12,7 +12,7 @@ $(BINNAME):
 DESKTOP_FILE ?= play_2048.desktop
 .PHONY: desktop
 desktop: extract $(DESKTOP_FILE)
-$(DESKTOP_FILE):
+$(DESKTOP_FILE): squashfs-root/$(DESKTOP_FILE)
 	cp squashfs-root/$(DESKTOP_FILE) .
 	sed -i \
 		"s/Exec=.*/Exec=\/$(subst /,\/,$(PREFIX))\/bin\/$(BINNAME)/" \
