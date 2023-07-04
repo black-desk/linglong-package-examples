@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Bezique
+Exec=//opt/apps/org.deepin.Bezique/files/bin/Bezique
+Icon=bezique
+Comment=Plays bezique against the AI
+Terminal=false
+Categories=Game;
+
