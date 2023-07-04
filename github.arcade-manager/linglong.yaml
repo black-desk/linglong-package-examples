@@ -1,0 +1,22 @@
+package:
+  id: github.arcade-manager
+  name: 'arcade-manager'
+  version: 0.0.1
+  kind: app
+  description: |
+    arcade-manager game: arcade-manager
+
+runtime:
+  id: org.deepin.Runtime
+  version: 20.5.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
