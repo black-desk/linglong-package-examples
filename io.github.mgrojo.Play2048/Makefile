@@ -7,6 +7,7 @@ APP_PREFIX ?= mgrojo/2048
 binary: $(BINNAME)
 $(BINNAME):
 	echo "#!/usr/bin/env bash" > $(BINNAME)
+	echo "unset LD_LIBRARY_PATH" >> $(BINNAME)
 	echo "cd /$(PREFIX)/lib/$(APP_PREFIX) && ./AppRun $$@" >> $(BINNAME)
 
 DESKTOP_FILE ?= play_2048.desktop
