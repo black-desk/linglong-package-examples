@@ -26,6 +26,9 @@ squashfs-root: $(APPIMAGE)
 	chmod +x $(APPIMAGE)
 	./$(APPIMAGE) --appimage-extract
 
+APPIMAGE_URL ?= https://github.com/ArmagetronAd/armagetronad/releases/download/v0.2.9.1.0/ArmagetronAdvanced-0.2.9.1.0.AppImage  
+$(APPIMAGE):
+	wget $(APPIMAGE_URL) -O $(APPIMAGE)
 
 PREFIX ?= opt/$(APP_PREFIX) 
 DESTDIR ?=
