@@ -1,0 +1,23 @@
+package:
+  id: io.github.srevinsaju.element
+  name: airspaces
+  version: 1.11.27
+  kind: app
+  description: |
+    A glossy Matrix collaboration client for desktop, now portable!
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
+      
