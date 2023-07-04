@@ -1,0 +1,22 @@
+package:
+  id: io.github.arso-project.archipel
+  name: archipel
+  version: 2.6.0
+  kind: app
+  description: |
+    archipel is a decentralized archiving and media library system. 
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
