@@ -26,6 +26,9 @@ squashfs-root: $(APPIMAGE)
 	chmod +x $(APPIMAGE)
 	./$(APPIMAGE) --appimage-extract
 
+APPIMAGE_URL ?= https://github.com/amanharwara/altus/releases/download/4.8.6/Altus-4.8.6-x86_64.AppImage
+$(APPIMAGE):
+	wget $(APPIMAGE_URL) -O $(APPIMAGE)
 
 PREFIX ?= opt/$(APP_PREFIX) 
 DESTDIR ?=
