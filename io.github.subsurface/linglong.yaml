@@ -1,0 +1,22 @@
+package:
+  id: io.github.subsurface
+  name: subsurface
+  version: 5.0.10
+  kind: app
+  description: |
+    Subsurface is an divelog program for recreational, tech, and free-divers.
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
