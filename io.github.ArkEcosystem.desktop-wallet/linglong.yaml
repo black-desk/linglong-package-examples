@@ -1,0 +1,22 @@
+package:
+  id: io.github.ArkEcosystem.desktop-wallet
+  name: 'desktop-wallet'
+  version: 2.9.5
+  kind: app
+  description: |
+    desktop-wallet: ARK Desktop Wallet.
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
