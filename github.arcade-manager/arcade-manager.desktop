@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=ArcadeManager
+Exec=//opt/apps/github.arcade-manager/files/bin/arcade-manager
+Terminal=false
+Type=Application
+Icon=arcade-manager
+StartupWMClass=ArcadeManager
+X-AppImage-Version=7.1.0
+Comment=A rom management tool to help you manage your arcade (MAME/FBNeo) rom collection.
+Categories=Game;
