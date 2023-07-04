@@ -27,9 +27,9 @@ squashfs-root: $(APPIMAGE)
 	chmod +x $(APPIMAGE)
 	./$(APPIMAGE) --appimage-extract
 
-#APPIMAGE_URL ?= https://github.com/mgrojo/play_2048/releases/download/v0.9.10/Play_2048-v0.9.10-x86_64.AppImage  
-#$(APPIMAGE):
-#	wget $(APPIMAGE_URL) -O $(APPIMAGE)
+APPIMAGE_URL ?= https://github.com/cosmo0/arcade-manager/releases/download/v7.1/ArcadeManager-7.1-linux-x64.AppImage
+$(APPIMAGE):
+	wget $(APPIMAGE_URL) -O $(APPIMAGE)
 
 PREFIX ?= opt/$(APP_PREFIX)
 DESTDIR ?=
