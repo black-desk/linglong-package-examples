@@ -1,7 +1,7 @@
 package:
   id: io.github.bezique
   name: 'Bezique'
-  version: 1
+  version: 1.0.1
   kind: app
   description: |
     Bezique game: Plays bezique against the AI.
