@@ -26,9 +26,6 @@ $(DESKTOP_FILE):
 	sed -i \
 		"s@Exec=.*@Exec=/$(PREFIX)/bin/$(BINNAME)@" \
 		$(DESKTOP_FILE)
-
-
-
 APPIMAGE_URL ?= https://github.com/oguzhaninan/Stacer/releases/download/v1.1.0/Stacer-1.1.0-x64.AppImage
 $(APPIMAGE):
 	wget $(APPIMAGE_URL) -O $(APPIMAGE)
