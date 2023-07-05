@@ -54,3 +54,4 @@ clean:
 	rm $(DESKTOP_FILE) || true
 	rm $(BINNAME) || true
 
+
