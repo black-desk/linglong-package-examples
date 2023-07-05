@@ -1,0 +1,22 @@
+package:
+  id: io.github.vrest-ng
+  name: vrest-ng
+  version: 2.5.3
+  kind: app
+  description: |
+    2048 game: merge equal tiles until you add up to 2048.
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
