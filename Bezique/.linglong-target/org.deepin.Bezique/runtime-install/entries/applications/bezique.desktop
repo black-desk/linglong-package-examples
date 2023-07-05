@@ -1,9 +1,0 @@
-[Desktop Entry]
-Categories=Game;
-Comment=Plays bezique against the AI
-Exec=ll-cli run org.deepin.Bezique --exec //opt/apps/org.deepin.Bezique/files/bin/Bezique
-Icon=bezique
-Name=Bezique
-Terminal=false
-Type=Application
-X-linglong=org.deepin.Bezique

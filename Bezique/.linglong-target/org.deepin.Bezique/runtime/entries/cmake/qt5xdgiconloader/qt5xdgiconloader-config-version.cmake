@@ -1,1 +1,0 @@
-/home/int/Bezique/.linglong-target/org.deepin.Bezique/runtime/entries/cmake/qt5xdgiconloader/qt5xdgiconloader-config-version.cmake
