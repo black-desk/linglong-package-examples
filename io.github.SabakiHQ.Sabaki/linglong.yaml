@@ -1,0 +1,23 @@
+package:
+  id: io.github.SabakiHQ.Sabaki
+  name: 'Sabaki'
+  version: 0.52.2
+  kind: app
+  description: |
+    Sabaki: An elegant Go/Baduk/Weiqi board and SGF editor for a more civilized age.
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
+      
