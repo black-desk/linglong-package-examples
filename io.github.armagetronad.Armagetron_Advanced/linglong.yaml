@@ -1,0 +1,22 @@
+package:
+  id: io.github.armagetronad.ArmagetronAdvanced
+  name: 'ArmagetronAdvanced'
+  version: 0.2.9
+  kind: app
+  description: |
+    ArmagetronAdvanced game: 3d light cycle game
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
