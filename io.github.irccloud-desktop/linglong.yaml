@@ -1,0 +1,22 @@
+package:
+  id: io.github.irccloud-desktop
+  name: 'irccloud-desktop'
+  version: 0.16.0
+  kind: app
+  description: |
+    irccloud-desktop: IRCCloud Desktop Client
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
