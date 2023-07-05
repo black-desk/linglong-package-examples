@@ -1,0 +1,23 @@
+package:
+  id: io.github.qishibo.anotherRedisDesktopManager
+  name: anotherRedisDesktopManager
+  version: 1.6.1
+  kind: app
+  description: |
+    A faster, better and more stable redis desktop manager, compatible with Linux, windows, mac. What's more, it won't crash when loading massive keys.
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
+      
