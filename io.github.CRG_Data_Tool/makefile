@@ -26,9 +26,9 @@ squashfs-root: $(APPIMAGE)
 	chmod +x $(APPIMAGE)
 	./$(APPIMAGE) --appimage-extract
 
-#APPIMAGE_URL ?= https://github.com/Sriep/Bezique/releases/download/1.0.1/Bezique-x86_64.AppImage
-#$(APPIMAGE):
-#	wget $(APPIMAGE_URL) -O $(APPIMAGE)
+APPIMAGE_URL ?= https://github.com/AdamSmasherDerby/CRG-To-Statsbook/releases/download/v2.4.3/CRG.Data.Tool-2.4.3.AppImage
+$(APPIMAGE):
+	wget $(APPIMAGE_URL) -O $(APPIMAGE)
 
 PREFIX ?= opt/$(APP_PREFIX)
 DESTDIR ?=
