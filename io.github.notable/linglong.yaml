@@ -1,0 +1,22 @@
+package:
+  id: io.github.notable
+  name: 'notable'
+  version: 1.8.4
+  kind: app
+  description: |
+    notable: The markdown-based note-taking app that doesn¡¯t suck.
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
