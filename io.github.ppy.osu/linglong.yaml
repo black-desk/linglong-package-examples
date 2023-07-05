@@ -1,0 +1,22 @@
+package:
+  id: io.github.ppy.osu
+  name: 'osu'
+  version: 2023.621.0
+  kind: app
+  description: |
+    osu
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
