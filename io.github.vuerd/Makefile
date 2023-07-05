@@ -1,12 +1,13 @@
 .PHONY: all
 all: desktop binary
 
-BINNAME ?= ScreenCloud
-APP_PREFIX ?= olav-st/ScreenCloud
+BINNAME ?= vuerd
+APP_PREFIX ?= vuerd
 .PHONY: binary
 binary: $(BINNAME)
 $(BINNAME):
 	echo "#!/usr/bin/env bash" > $(BINNAME)
+	echo "unset LD_LIBRARY_PATH" >> $(BINNAME)
 	echo "cd /$(PREFIX)/lib/$(APP_PREFIX) && ./AppRun $$@" >> $(BINNAME)
 
 DESKTOP_FILE ?= $(shell cd squashfs-root && ls *.desktop)
@@ -18,14 +19,14 @@ $(DESKTOP_FILE): squashfs-root/$(DESKTOP_FILE)
 		"s/Exec=.*/Exec=\/$(subst /,\/,$(PREFIX))\/bin\/$(BINNAME)/" \
 		$(DESKTOP_FILE)
 
-APPIMAGE ?= ScreenCloud-v1.5.3-x86_64.AppImage
+APPIMAGE ?= vuerd_1.0.2.AppImage
 .PHONY: extract
 extract: squashfs-root
 squashfs-root: $(APPIMAGE)
 	chmod +x $(APPIMAGE)
 	./$(APPIMAGE) --appimage-extract
 
-APPIMAGE_URL ?= https://github.com/olav-st/screencloud/releases/download/v1.5.3/ScreenCloud-v1.5.3-x86_64.AppImage
+APPIMAGE_URL ?= https://github.com/dineug/vuerd-electron/releases/download/v1.0.2/vuerd_1.0.2.AppImage
 $(APPIMAGE):
 	wget $(APPIMAGE_URL) -O $(APPIMAGE)
 

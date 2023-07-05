@@ -1,10 +1,10 @@
 package:
-  id: io.github.olav-st/ScreenCloud
-  name: ScreenCloud
-  version: 1.5.3
+  id: io.github.vuerd
+  name: vuerd
+  version: 1.0.2
   kind: app
   description: |
-    Capture and share screenshots easily
+    vuerd_1.0.2
 
 runtime:
   id: org.deepin.Runtime
