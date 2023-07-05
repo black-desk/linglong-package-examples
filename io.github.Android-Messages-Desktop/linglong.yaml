@@ -1,0 +1,22 @@
+package:
+  id: io.github.android-messages-desktop
+  name: 'android-messages-desktop'
+  version: 3.1.0
+  kind: app
+  description: |
+    android-messages-desktop: Messages for web, as a desktop app
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
