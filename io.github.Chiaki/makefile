@@ -26,9 +26,9 @@ squashfs-root: $(APPIMAGE)
 	chmod +x $(APPIMAGE)
 	./$(APPIMAGE) --appimage-extract
 
-#APPIMAGE_URL ?= https://github.com/Sriep/Bezique/releases/download/1.0.1/Bezique-x86_64.AppImage
-#$(APPIMAGE):
-#	wget $(APPIMAGE_URL) -O $(APPIMAGE)
+APPIMAGE_URL ?= https://github.com/thestr4ng3r/chiaki/releases/download/v1.3.0/Chiaki-v1.3.0-Linux-x86_64.AppImage
+$(APPIMAGE):
+	wget $(APPIMAGE_URL) -O $(APPIMAGE)
 
 PREFIX ?= opt/$(APP_PREFIX)
 DESTDIR ?=
