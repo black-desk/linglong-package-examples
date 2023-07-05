@@ -1,0 +1,22 @@
+package:
+  id: io.github.Sengi
+  name: 'Sengi'
+  version: 1.2.0
+  kind: app
+  description: |
+    Sengi is available as an AppImage which means "one app = one file", which you can download and run on your Linux system while you don't need a package manager and nothing gets changed in your system. Awesome!
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
