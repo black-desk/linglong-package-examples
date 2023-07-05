@@ -1,0 +1,22 @@
+package:
+  id: github.youtube-music-desktop
+  name: 'youtube-music-desktop'
+  version: 0.2.1
+  kind: app
+  description: |
+    youtube-music-desktop
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
