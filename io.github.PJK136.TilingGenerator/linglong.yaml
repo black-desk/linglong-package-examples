@@ -1,0 +1,23 @@
+package:
+  id: io.github.PJK136.TilingGenerator
+  name: 'TilingGenerator'
+  version: 0.0.1
+  kind: app
+  description: |
+    TilingGenerator: G¨¦n¨¦rateur de pavage
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
+      
