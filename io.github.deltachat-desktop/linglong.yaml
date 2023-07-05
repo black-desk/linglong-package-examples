@@ -1,0 +1,22 @@
+package:
+  id: io.github.deltachat-desktop
+  name: 'deltachat-desktop'
+  version: 1.38.1
+  kind: app
+  description: |
+    deltachat-desktop: Desktop Application for delta.chat
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
