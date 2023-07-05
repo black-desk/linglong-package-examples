@@ -1,0 +1,22 @@
+package:
+  id: io.github.aandrew-me.YTDownloader
+  name: 'YTDownloader'
+  version: 3.14.1
+  kind: app
+  description: |
+    YTDownloader: A modern GUI video and audio downloader supporting hundreds of sites.
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
