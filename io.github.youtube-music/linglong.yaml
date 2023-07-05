@@ -1,0 +1,23 @@
+package:
+  id: io.github.youtube-music
+  name: youtube-music
+  version: 1.20.0
+  kind: app
+  description: |
+    youtube-music
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
+      
