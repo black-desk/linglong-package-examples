@@ -1,0 +1,23 @@
+package:
+  id: io.github.learningmedia.anavis
+  name: anavis
+  version: 2.0.0-beta.20
+  kind: app
+  description: |
+    AnaVis is a tool to visualize musical form.
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
+      
