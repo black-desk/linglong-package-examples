@@ -1,0 +1,22 @@
+package:
+  id: io.github.GithubDesktop
+  name: 'GithubDesktop'
+  version: 3.2.5
+  kind: app
+  description: |
+    GithubDessktop: Simple collaboration from your desktop
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
