@@ -1,0 +1,23 @@
+package:
+  id: io.github.tablo-tools-electron
+  name: tablo-tools-electron
+  version: 0.3.14
+  kind: app
+  description: |
+    tablo-tools-electron
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
+      
