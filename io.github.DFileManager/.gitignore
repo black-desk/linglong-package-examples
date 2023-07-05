@@ -2,5 +2,5 @@ squashfs-root
 .linglong-target
 binaries
 DFileManager
-DFileManager.desktop
+dfm.desktop
 DFileManager-6117950-x86_64.AppImage

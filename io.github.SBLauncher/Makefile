@@ -11,7 +11,7 @@ $(BINNAME):
 	echo "unset LD_LIBRARY_PATH" >> $(BINNAME)
 	echo "cd $(PREFIX)/lib/$(APP_PREFIX) && ./AppRun $$@" >> $(BINNAME)
 
-DESKTOP_FILE ?= $(shell cd squashfs-root && ls *.desktop)
+DESKTOP_FILE ?= samboylauncher.desktop
 .PHONY: desktop
 desktop: extract $(DESKTOP_FILE)
 $(DESKTOP_FILE):
@@ -20,7 +20,7 @@ $(DESKTOP_FILE):
 		"s@Exec=.*@Exec=/$(PREFIX)/bin/$(BINNAME)@" \
 		$(DESKTOP_FILE)
 
-APPIMAGE ?= $(shell  ls *.AppImage)
+APPIMAGE ?= SBLauncher-2.0.0-pre-linux-x86_64.AppImage
 .PHONY: extract
 extract: squashfs-root
 squashfs-root: $(APPIMAGE)
