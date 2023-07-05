@@ -1,0 +1,22 @@
+package:
+  id: io.github.appium-desktop
+  name: 'appium-desktop'
+  version: 1.22.3
+  kind: app
+  description: |
+    appium-desktop: Graphical interface for the Appium server, and an app inspector
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
