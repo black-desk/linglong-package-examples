@@ -1,0 +1,22 @@
+package:
+  id: github.KenCorma.nexus_wallet
+  name: 'nexus_wallet'
+  version: 3.1.0
+  kind: app
+  description: |
+    The official Logical and Interface layers of the Nexus Software Stack.
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
