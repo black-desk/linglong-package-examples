@@ -1,0 +1,6 @@
+squashfs-root
+binaries
+.linglong-target
+hotspot
+com.kdab.hotspot.desktop
+hotspot-v1.4.1-x86_64.AppImage
