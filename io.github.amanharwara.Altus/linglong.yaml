@@ -1,0 +1,23 @@
+package:
+  id: io.github.amanharwara.Altus
+  name: 'Altus'
+  version: 4.8.6
+  kind: app
+  description: |
+    Altus: Electron-based desktop wrapper for WhatsApp Web
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
+      
