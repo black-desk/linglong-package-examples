@@ -1,0 +1,22 @@
+package:
+  id: github.comountainclimber.neon
+  name: 'neon'
+  version: 2.17.10
+  kind: app
+  description: |
+    Light wallet for the NEO blockchain.
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install

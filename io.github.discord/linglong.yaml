@@ -1,0 +1,22 @@
+package:
+  id: io.github.Discord
+  name: 'Discord'
+  version: 0.0.27
+  kind: app
+  description: |
+    This is a rom management tool, specifically designed for use with Retropie & Recalbox, but it works with anything.
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
