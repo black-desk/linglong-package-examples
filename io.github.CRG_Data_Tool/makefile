@@ -10,7 +10,7 @@ $(BINNAME):
 	echo "unset LD_LIBRARY_PATH" >> $(BINNAME)
 	echo "cd /$(PREFIX)/lib/$(APP_PREFIX) && ./AppRun $$@" >> $(BINNAME)
 
-DESKTOP_FILE ?= $(shell cd squashfs-root && ls *.desktop)
+DESKTOP_FILE ?= crgdatatool.desktop
 .PHONY: desktop
 desktop: extract $(DESKTOP_FILE)
 $(DESKTOP_FILE):
@@ -19,16 +19,16 @@ $(DESKTOP_FILE):
 		"s/Exec=.*/Exec=\/$(subst /,\/,$(PREFIX))\/bin\/$(BINNAME)/" \
 		$(DESKTOP_FILE)
 
-APPIMAGE ?= $(shell ls *.AppImage)
+APPIMAGE ?= CRG.Data.Tool-2.4.3.AppImage
 .PHONY: extract
 extract: squashfs-root
 squashfs-root: $(APPIMAGE)
 	chmod +x $(APPIMAGE)
 	./$(APPIMAGE) --appimage-extract
 
-APPIMAGE_URL ?= https://github.com/Sriep/Bezique/releases/download/1.0.1/Bezique-x86_64.AppImage
-$(APPIMAGE):
-	wget $(APPIMAGE_URL) -O $(APPIMAGE)
+#APPIMAGE_URL ?= https://github.com/Sriep/Bezique/releases/download/1.0.1/Bezique-x86_64.AppImage
+#$(APPIMAGE):
+#	wget $(APPIMAGE_URL) -O $(APPIMAGE)
 
 PREFIX ?= opt/$(APP_PREFIX)
 DESTDIR ?=
