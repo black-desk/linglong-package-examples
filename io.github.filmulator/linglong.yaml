@@ -1,0 +1,22 @@
+package:
+  id: io.github.filmulator
+  name: 'filmulator'
+  version: 0.11.1
+  kind: app
+  description: |
+    Filmulator accepts raw files from cameras and simulates the development of film as if exposed to the same light as the camera's sensor.
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
