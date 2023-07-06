@@ -1,0 +1,23 @@
+package:
+  id: io.github.SimpleInstaBot
+  name: 'SimpleInstaBot'
+  version: 1.11.2
+  kind: app
+  description: |
+    SimpleInstaBot
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
+      
