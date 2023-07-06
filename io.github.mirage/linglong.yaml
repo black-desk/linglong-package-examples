@@ -1,0 +1,22 @@
+package:
+  id: io.github.mirage
+  name: mirage
+  version: 0.7.2
+  kind: app
+  description: |
+    mirage
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
