@@ -1,0 +1,22 @@
+package:
+  id: io.github.ontio.OWallet
+  name: 'OWallet'
+  version: '0.9.28'
+  kind: app
+  description: |
+    OWallet - a comprehensive Ontology desktop wallet
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
