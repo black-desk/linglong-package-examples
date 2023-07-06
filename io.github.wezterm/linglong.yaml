@@ -1,0 +1,22 @@
+package:
+  id: github.wezterm
+  name: 'wezterm'
+  version: 20230408-112425-69ae8472
+  kind: app
+  description: |
+    youtube-music-desktop
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
