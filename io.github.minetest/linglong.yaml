@@ -1,0 +1,22 @@
+package:
+  id: io.github.minetest
+  name: minetest
+  version: 5.7.0
+  kind: app
+  description: |
+    minetest
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
