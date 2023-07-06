@@ -1,0 +1,22 @@
+package:
+  id: io.github.Qredit
+  name: 'Qredit'
+  version: 1.0.3
+  kind: app
+  description: |
+    Qredit: Qredit Desktop Wallet
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
