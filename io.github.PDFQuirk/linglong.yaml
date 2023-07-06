@@ -1,7 +1,7 @@
 package:
   id: io.github.PDFQuirk
   name: 'PDFQuirk'
-  version: 0.95
+  version: '0.95'
   kind: app
   description: |
     PDFQuirk: Create PDFs from images and scans.
