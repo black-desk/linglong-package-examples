@@ -1,0 +1,23 @@
+package:
+  id: io.github.translatium
+  name: translatium
+  version: 20.4.0
+  kind: app
+  description: |
+    Translate Any Languages like a Pro
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
+      
