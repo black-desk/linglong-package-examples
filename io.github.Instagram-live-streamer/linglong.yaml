@@ -1,0 +1,21 @@
+package:
+  id: io.github.sumoco
+  name: 'instagram-live-streamer'
+  version: 0.2.1
+  kind: app
+  description: |
+    This app or the creator is not associated or affiliated to Instagram. This is an unofficial application and stands no liability or warranty of usage. Use at your own risk.
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
