@@ -1,0 +1,21 @@
+package:
+  id: io.github.watchit
+  name: 'watchit'
+  version: 0.3.6
+  kind: app
+  description: |
+    WatchIt decentralizes the way you watch your movies. In short, it is a "collective entertainment methodology" in which each user consumes movies from the network and at the same time shares movies with other users.
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
