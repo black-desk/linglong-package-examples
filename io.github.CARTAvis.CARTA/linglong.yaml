@@ -1,0 +1,23 @@
+package:
+  id: io.github.CARTAvis.CARTA
+  name: 'CARTA'
+  version: 3.0.0
+  kind: app
+  description: |
+    Altus: The Cube Analysis and Rendering Tool for Astronomy is a next-generation image visualization and analysis tool designed for ALMA, VLA, and SKA pathfinders.
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
+      
