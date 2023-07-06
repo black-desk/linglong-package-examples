@@ -1,0 +1,22 @@
+package:
+  id: io.github.Rotki
+  name: 'Rotki'
+  version: 1.29.0
+  kind: app
+  description: |
+    Rotki: A portfolio tracking, asset analytics and tax reporting application specializing in Cryptoassets that respects your privacy
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
