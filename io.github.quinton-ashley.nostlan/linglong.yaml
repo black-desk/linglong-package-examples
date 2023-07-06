@@ -1,0 +1,22 @@
+package:
+  id: io.github.quinton-ashley.nostlan
+  name: 'nostlan'
+  version: '2.2'
+  kind: app
+  description: |
+    Nostlan is a game launcher for emulators!
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
