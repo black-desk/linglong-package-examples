@@ -1,0 +1,23 @@
+package:
+  id: io.github.BlueGlow
+  name: BlueGlow
+  version: 0.0.2
+  kind: app
+  description: |
+    BlueGlow
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
+      
