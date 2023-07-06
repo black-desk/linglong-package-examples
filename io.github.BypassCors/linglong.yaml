@@ -1,0 +1,21 @@
+package:
+  id: io.github.BypassCors
+  name: 'BypassCors'
+  version: 0.4.3
+  kind: app
+  description: |
+    Bypass Cors: Unlock browser's full potential!.
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
