@@ -1,0 +1,22 @@
+package:
+  id: io.github.Disass
+  name: 'Disass'
+  version: 0.07
+  kind: app
+  description: |
+    A simple disassembly tool.
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
