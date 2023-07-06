@@ -1,0 +1,22 @@
+package:
+  id: io.github.Stele
+  name: 'Stele'
+  version: 2.1.1
+  kind: app
+  description: |
+    Stele: Kiosk app wrapper for museum media exhibits
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
