@@ -1,0 +1,22 @@
+package:
+  id: io.github.PhotoFlare
+  name: 'PhotoFlare'
+  version: 1.5.9
+  kind: app
+  description: |
+    This is an effort to bring quick, simple but powerful image editing to the masses. PhotoFlare is inspired by the image editor currently only available on Microsoft Windows ¨C PhotoFiltre. However, it will not be a straight clone. It is being built from the ground up to be much improved and cross platform too!
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
