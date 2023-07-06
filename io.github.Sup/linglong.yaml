@@ -1,6 +1,6 @@
 package:
-  id: org.deepin.Sup
-  name: deepin-Sup
+  id: io.github.Sup
+  name: 'Sup'
   version: 0.3.2
   kind: app
   description: |
