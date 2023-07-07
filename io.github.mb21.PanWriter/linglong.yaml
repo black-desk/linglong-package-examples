@@ -1,0 +1,23 @@
+package:
+  id: io.github.mb21.PanWriter
+  name: 'PanWriter'
+  version: 0.8.5
+  kind: app
+  description: |
+    PanWriter: Markdown editor with pandoc integration and paginated preview
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
+      
