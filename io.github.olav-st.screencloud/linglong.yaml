@@ -1,0 +1,22 @@
+package:
+  id: io.github.olav-st.screencloud
+  name: 'ScreenCloud'
+  version: 1.5.3
+  kind: app
+  description: |
+    ScreenCloud: Capture and share screenshots easily.
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
