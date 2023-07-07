@@ -1,0 +1,22 @@
+package:
+  id: io.github.CREDITSCOM.cscrypto
+  name: 'cscrypto'
+  version: '0.3.0'
+  kind: app
+  description: |
+    Submodule for node repository. Credits crypto lib.
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
