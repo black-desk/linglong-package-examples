@@ -1,0 +1,23 @@
+package:
+  id: io.github.mysteryx93.PowerliminalsPlayer
+  name: 'PowerliminalsPlayer'
+  version: 3.1.2
+  kind: app
+  description: |
+    PowerliminalsPlayer: Plays multiple audios simultaneously at varying speeds
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
+      
