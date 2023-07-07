@@ -1,0 +1,23 @@
+package:
+  id: io.github.tgambet.musicalypse
+  name: 'musicalypse'
+  version: 1.0.0
+  kind: app
+  description: |
+    musicalypse: A modern audio player built with Web technologies.
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
+      
