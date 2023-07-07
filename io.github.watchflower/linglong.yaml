@@ -1,7 +1,7 @@
 package:
   id: io.github.watchflower
   name: 'watchflower'
-  version: 5.1
+  version: '5.1'
   kind: app
   description: |
     WatchFlower is a plant monitoring application that reads and plots data from compatible Bluetooth sensors like Xiaomi "Flower Care" and "RoPot" or Parrot "Flower Power" and "Parrot Pot", as well as many Bluetooth thermometers!
