@@ -1,0 +1,23 @@
+package:
+  id: io.github.lagrange
+  name: lagrange
+  version: 1.16.5
+  kind: app
+  description: |
+    Lagrange is a desktop GUI client for browsing Geminispace. It offers modern conveniences familiar from web browsers, such as smooth scrolling, inline image viewing, multiple tabs, visual themes, Unicode fonts, bookmarks, history, and page outlines.
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
+      
