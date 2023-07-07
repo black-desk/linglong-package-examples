@@ -1,6 +1,6 @@
 package:
   id: io.github.left
-  name: left
+  name: ‘left’
   version: 0.1
   kind: app
   description: |
