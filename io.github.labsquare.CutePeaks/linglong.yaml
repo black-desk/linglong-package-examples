@@ -1,0 +1,22 @@
+package:
+  id: io.github.labsquare.CutePeaks
+  name: 'CutePeaks'
+  version: '0.2.3'
+  kind: app
+  description: |
+    CutePeaks is a standalone Sanger trace viewer steered by a modern and user-friendly UI.
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
