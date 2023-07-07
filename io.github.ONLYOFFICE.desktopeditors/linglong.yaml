@@ -1,0 +1,22 @@
+package:
+  id: io.github.ONLYOFFICE.desktopeditors
+  name: 'desktopeditors'
+  version: '7.3.3'
+  kind: app
+  description: |
+    An office suite that combines text, spreadsheet and presentation editors allowing to create, view and edit local documents
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
