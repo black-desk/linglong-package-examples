@@ -1,0 +1,22 @@
+package:
+  id: io.github.qarmin.czkawka
+  name: 'czkawka'
+  version: 6.0.0
+  kind: app
+  description: |
+    czkawka:  a simple, fast and free app to remove unnecessary files from your computer.
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
