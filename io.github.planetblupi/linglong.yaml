@@ -1,0 +1,23 @@
+package:
+  id: io.github.planetblupi
+  name: 'planetblupi'
+  version: 1.15.0
+  kind: app
+  description: |
+    planetblupi
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
+      
