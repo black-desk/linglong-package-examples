@@ -1,0 +1,21 @@
+package:
+  id: io.github.keymanager
+  name: 'keymanager'
+  version: 0.19.10
+  kind: app
+  description: |
+    keymanager
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
