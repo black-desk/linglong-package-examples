@@ -2,7 +2,7 @@
 all: extract desktop binary
 
 BINNAME ?= DbGate
-#  ?=��ʾ���û�б���ֵ������ô�͸��ұߵ�ֵ
+#  ?=表示如果没有被赋值过，那么就赋右边的值
 APP_PREFIX ?= DbGate
 APPIMAGE ?= dbgate-5.2.6-linux_x86_64.AppImage
 .PHONY: extract
@@ -36,7 +36,7 @@ $(APPIMAGE):
 PREFIX ?= opt/$(APP_PREFIX)
 DESTDIR ?=
 .PHONY: install
-#-exec: find�����ƥ��ā9�8�ļ�ִ�9�5�иò�����������shell����
+#-exec: find命令对匹配的⽂文件执⾏行该参数所给出的shell命令
 install: binary desktop
 	( \
 		cd squashfs-root && \
