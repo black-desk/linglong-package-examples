@@ -1,0 +1,21 @@
+package:
+  id: io.github.LibreWolf
+  name: 'LibreWolf'
+  version: 114.0.2
+  kind: app
+  description: |
+    A custom version of Firefox, focused on privacy, security and freedom.
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
