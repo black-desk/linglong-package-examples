@@ -1,0 +1,23 @@
+package:
+  id: io.github.Mr.Dclutterer
+  name: 'Mr.Dclutterer'
+  version: 1.0.0
+  kind: app
+  description: |
+    Mr.Dclutterer
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
+      
