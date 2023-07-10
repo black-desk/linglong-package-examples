@@ -1,0 +1,6 @@
+squashfs-root
+binaries
+.linglong-target
+muse
+MusE-4.1.0-x86_64.AppImage
+io.github.muse_sequencer.Muse.desktop
