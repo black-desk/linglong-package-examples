@@ -1,0 +1,22 @@
+package:
+  id: io.github.dalboris.vpaint
+  name: 'vpaint'
+  version: '1.7'
+  kind: app
+  description: |
+    vpaint: Vector-Based Animation Editor.
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
