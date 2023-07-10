@@ -1,0 +1,23 @@
+package:
+  id: io.github.DATL4G.Burning-Series
+  name: 'Burning-Series'
+  version: 4.7.0
+  kind: app
+  description: |
+    Burning-Series: Watch any series from Burning-Series using this app. This is an unofficial Burning-Series App
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
+      
