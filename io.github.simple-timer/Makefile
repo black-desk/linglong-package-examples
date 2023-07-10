@@ -2,7 +2,6 @@
 all: extract desktop binary
 
 BINNAME ?= simple-timer
-#  ?=表示如果没有被赋值过，那么就赋右边的值
 APP_PREFIX ?= simple-timer
 APPIMAGE ?= simple-timer-0.4.3.AppImage
 .PHONY: extract
@@ -36,7 +35,6 @@ $(APPIMAGE):
 PREFIX ?= opt/$(APP_PREFIX)
 DESTDIR ?=
 .PHONY: install
-#-exec: find命令对匹配的⽂文件执⾏行该参数所给出的shell命令
 install: binary desktop
 	( \
 		cd squashfs-root && \
