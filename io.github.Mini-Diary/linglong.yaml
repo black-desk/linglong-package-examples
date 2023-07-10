@@ -1,0 +1,22 @@
+package:
+  id: io.github.Mini-Diary
+  name: 'Mini-Diary'
+  version: 3.3.0
+  kind: app
+  description: |
+    Mini-Diary: Simple and secure journal app
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
