@@ -1,7 +1,7 @@
 package:
   id: io.github.Rufus
   name: Rufus
-  version: 0.1
+  version: ‘0.1’
   kind: app
   description: |
     Rufus
