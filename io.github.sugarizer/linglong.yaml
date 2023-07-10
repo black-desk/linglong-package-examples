@@ -1,0 +1,22 @@
+package:
+  id: io.github.sugarizer
+  name: 'sugarizer'
+  version: 1.7.0
+  kind: app
+  description: |
+    Sugarizer is a free/libre learning platform. The Sugarizer UI use ergonomic principles from Sugar platform, developed for the One Laptop per Child project. Sugarizer is used every day by thousands of users around the world.
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
