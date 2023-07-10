@@ -1,0 +1,21 @@
+package:
+  id: io.github.retroarch
+  name: 'RetroArch'
+  version: 1.9.1
+  kind: app
+  description: |
+    RetroArch: Frontend for emulators, game engines and media players.
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
