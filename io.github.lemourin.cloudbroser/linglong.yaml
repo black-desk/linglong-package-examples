@@ -1,0 +1,22 @@
+package:
+  id: io.github.lemourin.cloudbrowser
+  name: 'cloudbrowser'
+  version: '1.9'
+  kind: app
+  description: |
+    Official libcloudstorage repository.
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
