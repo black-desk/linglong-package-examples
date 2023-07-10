@@ -1,0 +1,22 @@
+package:
+  id: io.github.cozy-labs.cozy-drive
+  name: 'cozy-drive'
+  version: '3.39.0'
+  kind: app
+  description: |
+    File Synchronisation for Cozy on Desktop and Laptop
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
