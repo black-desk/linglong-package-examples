@@ -1,0 +1,23 @@
+package:
+  id: io.github.Factom-Asset-Tokens.FAT_Wallet
+  name: 'FAT_Wallet'
+  version: 1.0.3
+  kind: app
+  description: |
+    FAT_Wallet: Wallet for FAT tokens. Factom Asset Tokens (FAT) is a protocol of tokenization built on top of the Factom blockchain.
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
+      
