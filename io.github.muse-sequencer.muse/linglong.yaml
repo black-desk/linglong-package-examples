@@ -1,7 +1,7 @@
 package:
   id: io.github.muse-sequencer.muse
   name: 'muse'
-  version: '4.1'
+  version: 4.1.0
   kind: app
   description: |
     muse: A music editor for Linux.
