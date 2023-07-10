@@ -1,0 +1,22 @@
+package:
+  id: io.github.jcelaya.hdrmerge
+  name: 'hdrmerge'
+  version: '0.6'
+  kind: app
+  description: |
+    HDR exposure merging
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
