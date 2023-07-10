@@ -1,0 +1,23 @@
+package:
+  id: io.github.altair-graphql.altair
+  name: altair
+  version: 5.0.28
+  kind: app
+  description: |
+    UI for Asar, Extract All or drag extract file/directory
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
+      
