@@ -1,0 +1,22 @@
+package:
+  id: io.github.Portree-Kid.flightgear-airports
+  name: 'flightgear-airports'
+  version: '0.0.34'
+  kind: app
+  description: |
+    No description or website provided.
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
