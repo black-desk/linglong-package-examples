@@ -1,0 +1,21 @@
+package:
+  id: io.github.MyBelka
+  name: 'MyBelka'
+  version: 'v0.1.72'
+  kind: app
+  description: |
+    MyBelka: A desktop client for the MyBelka program.
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
