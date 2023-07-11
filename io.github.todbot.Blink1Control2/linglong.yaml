@@ -1,0 +1,23 @@
+package:
+  id: io.github.todbot.Blink1Control2
+  name: 'Blink1Control2'
+  version: 2.2.9
+  kind: app
+  description: |
+    Blink1Control2: Blink1Control2 GUI app for blink(1) devices
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
+      
