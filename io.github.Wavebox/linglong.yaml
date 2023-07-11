@@ -1,0 +1,22 @@
+package:
+  id: github.wavebox
+  name: 'wavebox'
+  version: 10.114.32
+  kind: app
+  description: |
+    wavebox
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
