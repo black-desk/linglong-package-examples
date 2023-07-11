@@ -1,0 +1,22 @@
+package:
+  id: io.github.JoalDesktop
+  name: 'JoalDesktop'
+  version: 2.0.16
+  kind: app
+  description: |
+    JoalDesktop: Electron application boilerplate based on React, React Router, Webpack, React Hot Loader for rapid application development
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
