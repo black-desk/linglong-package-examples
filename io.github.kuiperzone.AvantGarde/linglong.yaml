@@ -1,0 +1,22 @@
+package:
+  id: io.github.kuiperzone.AvantGarde
+  name: 'AvantGarde'
+  version: '1.2.1'
+  kind: app
+  description: |
+    Avant Garde is a XAML previewer for the C# Avalonia Framework. Avant Garde is a standalone application, rather than an IDE extension. This means you can use it in conjunction with any IDE.
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
