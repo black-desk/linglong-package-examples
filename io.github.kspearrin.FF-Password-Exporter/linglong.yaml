@@ -1,0 +1,23 @@
+package:
+  id: io.github.kspearrin.FF-Password-Exporter
+  name: 'FF-Password-Exporter'
+  version: 1.2.0
+  kind: app
+  description: |
+    FF-Password-Exporter: Easily export your saved passwords from Firefox.
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
+      
