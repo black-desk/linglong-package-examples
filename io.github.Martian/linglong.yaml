@@ -1,0 +1,22 @@
+package:
+  id: Martian
+  name: 'Martian'
+  version: 0.5.2
+  kind: app
+  description: |
+    A tool to test websockets until this feature comes to Postman.
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
