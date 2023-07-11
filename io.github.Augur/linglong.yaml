@@ -1,0 +1,22 @@
+package:
+  id: io.github.Augur
+  name: 'Augur'
+  version: '1.16.11'
+  kind: app
+  description: |
+    Augur App is a lightweight Electron app that bundles the Augur UI and Augur Node together and deploys them locally to your machine. The Augur UI is a reference client used to interact with the Augur protocols core smart contracts on the Ethereum blockchain. Augur Node is a locally-run program that scans the Ethereum blockchain for event logs relevant to Augur, stores them in a database, and serves the respective data to the Augur UI.
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
