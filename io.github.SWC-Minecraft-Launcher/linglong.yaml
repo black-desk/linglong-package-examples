@@ -1,0 +1,22 @@
+package:
+  id: io.github.SWC-Minecraft-Launcher
+  name: 'SWC-Minecraft-Launcher'
+  version: 1.0.8
+  kind: app
+  description: |
+    SWC-Minecraft-Launcher
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
