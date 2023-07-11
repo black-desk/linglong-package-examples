@@ -1,0 +1,21 @@
+package:
+  id: io.github.mtCellEdit
+  name: 'mtCellEdit'
+  version: '3.7'
+  kind: app
+  description: |
+    mtCellEdit: Lightweight spreadsheet program.
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
