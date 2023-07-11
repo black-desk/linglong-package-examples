@@ -1,0 +1,22 @@
+package:
+  id: YesPlayMusic
+  name: 'YesPlayMusic'
+  version: 0.4.7
+  kind: app
+  description: |
+    music player
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
