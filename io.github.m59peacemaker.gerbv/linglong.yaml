@@ -1,0 +1,22 @@
+package:
+  id: io.github.m59peacemaker.gerbv
+  name: 'gerbv'
+  version: '2.7.0'
+  kind: app
+  description: |
+    No description, website, or topics provided.
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
