@@ -41,7 +41,13 @@ install: binary desktop
 		find -type l -exec bash -c " \
 			ln -s \$$(readlink {}) \
 				\"$(DESTDIR)/$(PREFIX)/lib/$(APP_PREFIX)/{}\" \
-		" \; \
+		" \; && \
+                cd usr/ && \
+                for path in `find share -type f`; do \
+                    install -D "$$path" "$(DESTDIR)/$(PREFIX)/$$path"; \
+                    cd `dirname $(DESTDIR)/$(PREFIX)/$$path` && \
+                    ln -srf ${DESTDIR}/$(PREFIX)/lib/$(APP_PREFIX)/usr/$$path . && \
+                    cd - ; done \
 	)
 	install -D $(BINNAME) \
 		$(DESTDIR)/$(PREFIX)/bin/$(BINNAME)
