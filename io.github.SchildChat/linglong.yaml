@@ -1,0 +1,22 @@
+package:
+  id: github.SchildiChat
+  name: 'SchildiChat'
+  version: 1.11.30
+  kind: app
+  description: |
+    SchildiChat
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
