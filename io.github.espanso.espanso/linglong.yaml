@@ -1,0 +1,22 @@
+package:
+  id: io.github.espanso.espanso
+  name: 'espanso'
+  version: 2.1.8
+  kind: app
+  description: |
+    A cross-platform Text Expander written in Rust.
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
