@@ -1,0 +1,23 @@
+package:
+  id: io.github.padloc.Padloc
+  name: 'Padloc'
+  version: 4.3.0
+  kind: app
+  description: |
+    Padloc: Electron Wrapper for Padloc app
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
+      
