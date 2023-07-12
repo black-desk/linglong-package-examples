@@ -1,0 +1,23 @@
+package:
+  id: io.github.harshkhandeparkar.Rainbow_Board
+  name: 'Rainbow_Board'
+  version: 0.8.1
+  kind: app
+  description: |
+    Rainbow_Board: 22nd Century Whiteboard App For Linux, Windows and Mac.
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
+      
