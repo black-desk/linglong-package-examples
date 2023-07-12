@@ -1,0 +1,23 @@
+package:
+  id: io.github.XELFViewer
+  name: 'XELFViewer'
+  version: '0.05'
+  kind: app
+  description: |
+    XELFViewer
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
+      
