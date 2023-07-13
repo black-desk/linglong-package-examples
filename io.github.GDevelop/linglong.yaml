@@ -1,0 +1,22 @@
+package:
+  id: GDevelop
+  name: 'GDevelop'
+  version: 5.2.166
+  kind: app
+  description: |
+    GDevelop is a full-featured, no-code, open-source game development software
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
