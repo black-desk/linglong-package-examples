@@ -1,0 +1,22 @@
+package:
+  id: io.github.Korkman.Basiliskll
+  name: 'Basiliskll'
+  version: '2023-07-11'
+  kind: app
+  description: |
+    Basilisk II is a Mac OS emulator that allows you to run classic 68k Macintosh II applications (1980s-1990s era). Prerequisites: 68k Macintosh ROM image and a copy of MacOS.
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
