@@ -1,0 +1,22 @@
+package:
+  id: gaiasky
+  name: 'gaiasky'
+  version: 3.4.2
+  kind: app
+  description: |
+    gaia Sky is a real-time, 3D, astronomy visualisation software for desktop and VR
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
