@@ -1,0 +1,22 @@
+package:
+  id: io.github.openblok
+  name: openblok
+  version: '0.8.4'
+  kind: app
+  description: |
+    openblok
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
