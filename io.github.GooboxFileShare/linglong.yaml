@@ -1,0 +1,22 @@
+package:
+  id: gooboxfileshare
+  name: 'gooboxfileshare'
+  version: 0.3.4
+  kind: app
+  description: |
+    Goobox file share desktop allows users to share files using an installed electron desktop application, which is especially handy in case of browser incompatibility.
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
