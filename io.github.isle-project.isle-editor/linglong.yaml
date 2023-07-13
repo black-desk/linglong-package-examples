@@ -1,0 +1,22 @@
+package:
+  id: io.github.isle-project.isle-editor
+  name: 'isle-editor'
+  version: 0.76.23
+  kind: app
+  description: |
+    Editor for Integrated Statistics Learning Environment (ISLE) lessons.
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
