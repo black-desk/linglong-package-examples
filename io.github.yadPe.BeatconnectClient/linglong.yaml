@@ -1,0 +1,22 @@
+package:
+  id: io.github.yadPe.BeatconnectClient
+  name: 'BeatconnectClient'
+  version: '0.3.9'
+  kind: app
+  description: |
+    Beatconnect power for osu irc.
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
