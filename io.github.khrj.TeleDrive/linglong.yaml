@@ -1,0 +1,23 @@
+package:
+  id: io.github.khrj.TeleDrive
+  name: 'TeleDrive'
+  version: 1.2.0
+  kind: app
+  description: |
+    TeleDrive: An app that lets you automatically backup to Telegram Saved Messages
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
+      
