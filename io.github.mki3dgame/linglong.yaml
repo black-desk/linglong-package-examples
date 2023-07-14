@@ -1,0 +1,22 @@
+package:
+  id: mki3dgame
+  name: 'mki3dgame'
+  version: 3.05
+  kind: app
+  description: |
+    A simple OpenGL game of searching for tokens in 3D stages. You also have to avoid the monsters
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
