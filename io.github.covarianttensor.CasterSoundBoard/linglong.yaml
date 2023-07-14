@@ -1,0 +1,22 @@
+package:
+  id: io.github.covarianttensor.CasterSoundBoard
+  name: 'castersoundboard'
+  version: 1.0.0
+  kind: app
+  description: |
+    A soundboard for hot-keying and playing back sounds. (For podcasting).
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
