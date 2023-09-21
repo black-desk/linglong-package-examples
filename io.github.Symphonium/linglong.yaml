@@ -1,5 +1,5 @@
 package:
-  id: github.symphonium
+  id: io.github.symphonium
   name: 'symphonium'
   version: 0.0.1
   kind: app

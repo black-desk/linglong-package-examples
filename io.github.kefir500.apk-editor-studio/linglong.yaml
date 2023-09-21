@@ -1,5 +1,5 @@
 package:
-  id: github.kefir500.apk-editor-studio
+  id: io.github.kefir500.apk-editor-studio
   name: 'apk-editor-studio'
   version: 1.7.1
   kind: app

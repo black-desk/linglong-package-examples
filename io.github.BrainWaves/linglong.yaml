@@ -1,5 +1,5 @@
 package:
-  id: BrainWaves
+  id: io.github.BrainWaves
   name: 'BrainWaves'
   version: 0.15.1
   kind: app

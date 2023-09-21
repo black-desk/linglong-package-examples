@@ -1,5 +1,5 @@
 package:
-  id: gaiasky
+  id: io.github.gaiasky
   name: 'gaiasky'
   version: 3.4.2
   kind: app

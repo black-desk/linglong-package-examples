@@ -1,5 +1,5 @@
 package:
-  id: github.comountainclimber.neon
+  id: io.github.comountainclimber.neon
   name: 'neon'
   version: 2.17.10
   kind: app

@@ -1,5 +1,5 @@
 package:
-  id: github.youtube-music-desktop
+  id: io.github.youtube-music-desktop
   name: 'youtube-music-desktop'
   version: 0.2.1
   kind: app

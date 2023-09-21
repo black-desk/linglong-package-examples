@@ -1,7 +1,7 @@
 package:
   id: io.github.FontForge
   name: 'FontForge'
-  version: '20230101'
+  version: '2023.1.1'
   kind: app
   description: |
     FontForge is a font editor for outline and bitmap fonts that lets you create, edit, or convert, a range of fonts, including PostScript, TrueType, OpenType, cid-keyed, multi-master, cff, SVG and BitMap (bdf, FON, NFNT) fonts.

@@ -1,5 +1,5 @@
 package:
-  id: github.wavebox
+  id: io.github.wavebox
   name: 'wavebox'
   version: 10.114.32
   kind: app

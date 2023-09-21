@@ -26,7 +26,7 @@ squashfs-root: $(APPIMAGE)
 	chmod +x $(APPIMAGE)
 	./$(APPIMAGE) --appimage-extract
 
-APPIMAGE_URL ?= https://github.com/synthein/synthein/releases/download/v0.2.1/synthein-v0.2.1.AppImages
+APPIMAGE_URL ?= https://github.com/synthein/synthein/releases/download/v0.2.1/synthein-v0.2.1.AppImage
 $(APPIMAGE):
 	wget $(APPIMAGE_URL) -O $(APPIMAGE)
 

@@ -1,5 +1,5 @@
 package:
-  id: github.SchildiChat
+  id: io.github.SchildiChat
   name: 'SchildiChat'
   version: 1.11.30
   kind: app

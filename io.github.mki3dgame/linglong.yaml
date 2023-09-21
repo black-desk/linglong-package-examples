@@ -1,7 +1,7 @@
 package:
-  id: mki3dgame
+  id: io.github.mki3dgame
   name: 'mki3dgame'
-  version: 3.05
+  version: 3.5.0
   kind: app
   description: |
     A simple OpenGL game of searching for tokens in 3D stages. You also have to avoid the monsters
