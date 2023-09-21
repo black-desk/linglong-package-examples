@@ -1,5 +1,5 @@
 package:
-  id: github.NetEaseCloudMusic
+  id: io.github.NetEaseCloudMusic
   name: 'NetEaseCloudMusic'
   version: 1.2.0
   kind: app

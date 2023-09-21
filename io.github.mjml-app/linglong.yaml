@@ -1,5 +1,5 @@
 package:
-  id: mjml-app
+  id: io.github.mjml-app
   name: 'mjml-app'
   version: 3.1.0
   kind: app

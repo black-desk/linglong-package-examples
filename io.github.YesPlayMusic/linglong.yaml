@@ -1,5 +1,5 @@
 package:
-  id: YesPlayMusic
+  id: io.github.YesPlayMusic
   name: 'YesPlayMusic'
   version: 0.4.7
   kind: app

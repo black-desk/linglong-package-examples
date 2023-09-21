@@ -26,7 +26,7 @@ squashfs-root: $(APPIMAGE)
 	chmod +x $(APPIMAGE)
 	./$(APPIMAGE) --appimage-extract
 
-APPIMAGE_URL ?= https://github.com/blupi-games/planetblupi-dev/releases/download/v1.15.0-rc1/planetblupi.AppImage
+APPIMAGE_URL ?= https://github.com/blupi-games/planetblupi-dev/releases/download/v1.15.0-rc1/planetblupi-1.15.0-rc1.AppImage
 $(APPIMAGE):
 	wget $(APPIMAGE_URL) -O $(APPIMAGE)
 

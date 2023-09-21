@@ -26,7 +26,7 @@ squashfs-root: $(APPIMAGE)
 	chmod +x $(APPIMAGE)
 	./$(APPIMAGE) --appimage-extract
 
-APPIMAGE_URL ?= https://github.com/shadowsocks/shadowsocks-qt5/releases/download/v3.0.1/Shadowsocks-Qt5-3.0.1-x86_64.AppImages
+APPIMAGE_URL ?= https://github.com/shadowsocks/shadowsocks-qt5/releases/download/v3.0.1/Shadowsocks-Qt5-3.0.1-x86_64.AppImage
 $(APPIMAGE):
 	wget $(APPIMAGE_URL) -O $(APPIMAGE)
 

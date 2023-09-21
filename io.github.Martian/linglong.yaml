@@ -1,5 +1,5 @@
 package:
-  id: Martian
+  id: io.github.Martian
   name: 'Martian'
   version: 0.5.2
   kind: app

@@ -1,5 +1,5 @@
 package:
-  id: tutanota
+  id: io.github.tutanota
   name: 'tutanota'
   version: 3.113.3
   kind: app

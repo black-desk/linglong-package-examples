@@ -1,5 +1,5 @@
 package:
-  id: gooboxfileshare
+  id: io.github.gooboxfileshare
   name: 'gooboxfileshare'
   version: 0.3.4
   kind: app

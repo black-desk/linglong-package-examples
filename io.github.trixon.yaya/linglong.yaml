@@ -1,5 +1,5 @@
 package:
-  id: github.trixon.yaya
+  id: io.github.trixon.yaya
   name: 'yaya'
   version: 0.2
   kind: app

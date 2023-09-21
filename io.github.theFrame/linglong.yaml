@@ -1,5 +1,5 @@
 package:
-  id: github.theFrame
+  id: io.github.theFrame
   name: 'theFrame'
   version: 1.0
   kind: app

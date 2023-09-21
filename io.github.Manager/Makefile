@@ -26,7 +26,7 @@ squashfs-root: $(APPIMAGE)
 	chmod +x $(APPIMAGE)
 	./$(APPIMAGE) --appimage-extract
 
-APPIMAGE_URL ?= https://github.com/Manager-io/Manager.AppImage/releases/download/22.3.81/Manager-x64.AppImage
+APPIMAGE_URL ?= https://github.com/Manager-io/Manager/releases/download/23.8.25.1002/Manager-linux-x64.AppImage
 $(APPIMAGE):
 	wget $(APPIMAGE_URL) -O $(APPIMAGE)
 

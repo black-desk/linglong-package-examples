@@ -1,7 +1,7 @@
 package:
   id: io.github.Drill
   name: 'Drill'
-  version: 'v566'
+  version: '0.0.566'
   kind: app
   description: |
     Search files without using indexing, but clever crawling

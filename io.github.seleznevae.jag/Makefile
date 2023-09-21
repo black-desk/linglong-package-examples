@@ -9,7 +9,7 @@ $(BINNAME):
 	echo "#!/usr/bin/env bash" > $(BINNAME)
 	echo "cd /$(PREFIX)/lib/$(APP_PREFIX) && ./AppRun $$@" >> $(BINNAME)
 
-DESKTOP_FILE ?= jag.desktop
+DESKTOP_FILE ?= JaG.desktop
 .PHONY: desktop
 desktop: extract $(DESKTOP_FILE)
 $(DESKTOP_FILE):

@@ -1,5 +1,5 @@
 package:
-  id: github.unreel
+  id: io.github.unreel
   name: 'unreel'
   version: 1.4.0
   kind: app

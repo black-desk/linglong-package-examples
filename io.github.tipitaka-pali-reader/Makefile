@@ -10,7 +10,7 @@ $(BINNAME):
 	echo "unset LD_LIBRARY_PATH" >> $(BINNAME)
 	echo "cd /$(PREFIX)/lib/$(APP_PREFIX) && ./AppRun $$@" >> $(BINNAME)
 
-DESKTOP_FILE ?= tipitaka-pali-reader.desktop
+DESKTOP_FILE ?= tipitaka_pali_reader.desktop
 .PHONY: desktop
 desktop: extract $(DESKTOP_FILE)
 $(DESKTOP_FILE): squashfs-root/$(DESKTOP_FILE)

@@ -1,5 +1,5 @@
 package:
-  id: github.xonsh
+  id: io.github.xonsh
   name: 'xonsh'
   version: 0.14.0
   kind: app

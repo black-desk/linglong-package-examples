@@ -1,7 +1,7 @@
 package:
   id: io.github.nheko
   name: 'nheko'
-  version: 'v0.6.2'
+  version: '0.6.2'
   kind: app
   description: |
     nheko: Desktop client for Matrix.

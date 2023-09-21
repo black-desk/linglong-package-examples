@@ -1,7 +1,7 @@
 package:
   id: io.github.taskizer
   name: 'Taskizer'
-  version: 'v2.0.0-rc.2'
+  version: '2.0.0'
   kind: app
   description: |
     Taskizer: A task management app.
