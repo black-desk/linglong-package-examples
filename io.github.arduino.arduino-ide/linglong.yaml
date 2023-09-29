@@ -1,0 +1,23 @@
+package:
+  id: io.github.arduino.arduino-ide
+  name: arduino-ide
+  version: 2.1.1
+  kind: app
+  description: |
+    The Arduino IDE 2.x is a major rewrite, sharing no code with the IDE 1.x. It is based on the Theia IDE framework and built with Electron. 
+
+runtime:
+  id: org.deepin.Runtime
+  version: 23.0.0
+
+source:
+  kind: local
+
+build:
+  kind: manual
+  manual:
+    build: |
+      make
+    install: |
+      make install
+      
