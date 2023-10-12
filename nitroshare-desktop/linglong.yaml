@@ -1,10 +1,10 @@
 package:
-  id: org.deepin.des
-  name: deepin-des
+  id: org.deepin.nitroshare-desktop
+  name: deepin-nitroshare-desktop
   version: 0.0.1
   kind: app
   description: |
-    simple qt demo.
+    simple qt nitroshare-desktop.
 
 runtime:
   id: org.deepin.Runtime
